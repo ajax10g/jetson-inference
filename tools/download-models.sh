@@ -646,7 +646,7 @@ while true; do
 							  8 "   > ResNet-152                 (242 MB)" off \
 							  9 "   > VGG-16                     (554 MB)" off \
 							  10 "   > VGG-19                     (575 MB)" off \
-							  11 "   > Inception-v4               (172 MB)" off \
+							  11 "   > Inception-v4               (172 MB)" on \
 							  12 "\ZbObject Detection - all models   (395 MB)\Zn" off \
 							  13 "   > SSD-Mobilenet-v1           (27 MB)" off \
 							  14 "   > SSD-Mobilenet-v2           (68 MB)" on \
@@ -716,7 +716,7 @@ while true; do
 					download_vgg16
 				elif [ $model = 10 ] && [ -z $ALL_RECOGNITION ]; then
 					download_vgg19
-				elif [ $model = 8 ] && [ -z $ALL_RECOGNITION ]; then
+				elif [ $model = 11 ] && [ -z $ALL_RECOGNITION ]; then
 					download_inception_v4
 				elif [ $model = 12 ]; then
 					download_detection
